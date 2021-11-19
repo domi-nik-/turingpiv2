@@ -1,0 +1,21 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: iperf3-deployment
+  labels:
+    app: iperf3
+spec:
+  replicas: 2
+  selector:
+    matchLabels:
+      app: iperf3
+  template:
+    metadata:
+      labels:
+        app: iperf3
+    spec:
+      containers:
+      - name: iperf3
+        image: taoyou/iperf3-alpine
+        ports:
+        - containerPort: 5201
