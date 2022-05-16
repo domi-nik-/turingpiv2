@@ -41,7 +41,7 @@ See https://kubernetes.io/de/docs/tasks/tools/install-kubectl/
 
 ## My network setup at home
 
-![Network Setup](/images/TuringPiv2_network.png "foo")
+![Network Setup](./images/TuringPiv2_network.png "Network Setup")
 
 If you have a simpler network setup that’s totally fine! The three components DSL-Router, WLAN AP and Switch will be all combined in your DSL-Router so just use the network ports of that. 
 
